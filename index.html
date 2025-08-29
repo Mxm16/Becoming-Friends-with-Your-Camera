@@ -1,38 +1,85 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Becoming Friends with Your Camera</title>
   <style>
-    body { font-family: Arial, sans-serif; max-width: 800px; margin: auto; line-height: 1.6; }
-    h1, h2 { color: #2c3e50; }
-    img { max-width: 100%; margin: 10px 0; }
-    .section { margin-bottom: 40px; }
+    body { font-family: Arial, sans-serif; max-width: 900px; margin: auto; line-height: 1.6; background: #fafafa; padding: 20px; }
+    h1 { text-align: center; color: #2c3e50; }
+    h2 { color: #34495e; border-bottom: 2px solid #ddd; padding-bottom: 5px; }
+    p { color: #555; }
+    .section { margin-bottom: 50px; }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      margin-top: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .caption {
+      text-align: center;
+      font-size: 0.9em;
+      color: #666;
+      margin-top: 5px;
+    }
   </style>
 </head>
 <body>
   <h1>Becoming Friends with Your Camera</h1>
-  <p><em>By [Your Name]</em></p>
+  <p style="text-align:center;"><em>By [Your Name]</em></p>
 
   <div class="section">
     <h2>Part 1: Selfie Comparison</h2>
-    <p>First photo: close-up selfie (distorted).<br>
-       Second photo: stepped back, zoomed in (better proportions).</p>
-    <img src="images/selfie-close.jpg" alt="Close selfie">
-    <img src="images/selfie-zoom.jpg" alt="Zoomed selfie">
+    <p>
+      A comparison of a close-up selfie (which looks distorted) versus stepping back and zooming in 
+      (which gives more natural proportions).
+    </p>
+    <div class="gallery">
+      <div>
+        <img src="images/selfie-close.jpg" alt="Close selfie">
+        <div class="caption">Close-up selfie</div>
+      </div>
+      <div>
+        <img src="images/selfie-zoom.jpg" alt="Zoomed selfie">
+        <div class="caption">Stepped back + zoom</div>
+      </div>
+    </div>
   </div>
 
   <div class="section">
     <h2>Part 2: Architectural Perspective</h2>
-    <p>Comparison of long street with zoom vs walking closer without zoom.</p>
-    <img src="images/street-zoom.jpg" alt="Street zoomed">
-    <img src="images/street-close.jpg" alt="Street close">
+    <p>
+      Looking down a long street: one photo taken by zooming in, and the other by walking closer 
+      without zoom. The zoomed version compresses distance, while walking changes perspective.
+    </p>
+    <div class="gallery">
+      <div>
+        <img src="images/street-zoom.jpg" alt="Street zoomed">
+        <div class="caption">Zoomed-in view</div>
+      </div>
+      <div>
+        <img src="images/street-close.jpg" alt="Street close">
+        <div class="caption">Walked closer, no zoom</div>
+      </div>
+    </div>
   </div>
 
   <div class="section">
     <h2>Part 3: Dolly Zoom</h2>
-    <p>Animated dolly zoom effect created by moving back and zooming in.</p>
-    <img src="images/dollyzoom.gif" alt="Dolly Zoom animation">
+    <p>
+      A dolly zoom effect, created by moving back while zooming in. The subject stays the same size, 
+      but the background stretches dramatically.
+    </p>
+    <div class="gallery">
+      <div>
+        <img src="images/dollyzoom.gif" alt="Dolly Zoom animation">
+        <div class="caption">Animated Dolly Zoom</div>
+      </div>
+    </div>
   </div>
 
 </body>
