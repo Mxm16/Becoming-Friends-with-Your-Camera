@@ -35,6 +35,7 @@
     font-size: 1.5em;
     position: relative;
     padding-bottom: 6px;
+    text-align: left;
   }
   h2::after {
     content: "";
@@ -84,10 +85,18 @@
     box-shadow: 0 6px 18px rgba(231,84,128,0.25);
   }
   .caption {
-    font-size: 0.6em;
+    font-size: 0.9em;
     color: #666;
     margin-top: 8px;
     font-style: italic;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+  @media print {
+    .page-break {
+      page-break-before: always;
+    }
   }
   </style>
 </head>
@@ -111,6 +120,8 @@
     </div>
   </div>
 
+  <div class="page-break"></div>
+
   <div class="section">
     <h2>Part 2: Architectural Perspective Compression</h2>
     <p>Looking up long stairs: one photo taken by zooming in, and the other by walking closer without zoom.</p>
@@ -127,6 +138,8 @@
       </div>
     </div>
   </div>
+
+  <div class="page-break"></div>
 
   <div class="section">
     <h2>Part 3: The Dolly Zoom</h2>
