@@ -14,7 +14,6 @@
     padding: 40px 20px;
     color: #444;
   }
-  
   h1 {
     text-align: center;
     font-family: "Merriweather", serif;
@@ -24,13 +23,11 @@
     letter-spacing: 1px;
     text-shadow: 1px 1px 2px rgba(176,48,96,0.15);
   }
-  
   em {
     font-family: "Pacifico", cursive;
     color: #c06090;
     font-size: 1.1em;
   }
-  
   h2 {
     font-family: "Merriweather", serif;
     color: #8b3a62;
@@ -49,14 +46,12 @@
     background: linear-gradient(to right, #e75480, #ff9eb5);
     border-radius: 2px;
   }
-  
   p {
     color: #555;
     font-size: 1.05em;
     text-align: justify;
     margin: 15px 0;
   }
-  
   .section {
     background: #fff;
     padding: 25px 30px;
@@ -67,18 +62,33 @@
     border-image: linear-gradient(to right, #e75480, #ff9eb5);
     border-image-slice: 1;
   }
-  
+  .gallery {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  .gallery div {
+    flex: 1 1 45%;
+    max-width: 45%;
+    text-align: center;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
   .gallery img:hover {
     transform: scale(1.03);
     box-shadow: 0 6px 18px rgba(231,84,128,0.25);
   }
-    .caption {
-      text-align: center;
-      font-size: 0.9em;
-      color: #666;
-      margin-top: 8px;
-      font-style: italic;
-    }
+  .caption {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 8px;
+    font-style: italic;
+  }
   </style>
 </head>
 <body>
@@ -104,15 +114,9 @@
 
   <div class="section">
     <h2>Part 2: Architectural Perspective Compression</h2>
-    <p>
-      Looking up long stairs: one photo taken by zooming in, and the other by walking closer without zoom.
-    </p>
-    <p>
-      The reason why the first picture looks flattened or compressed may be that zooming makes objects at different distances appear closer together, making the background look larger and closer to the foreground.
-    </p>
-    <p>
-      In the second picture, nearby objects look much larger relative to distant ones, and the stairs' edges converge sharply, making the scene more stretched out and spacious.
-    </p>
+    <p>Looking up long stairs: one photo taken by zooming in, and the other by walking closer without zoom.</p>
+    <p>The reason why the first picture looks flattened or compressed may be that zooming makes objects at different distances appear closer together, making the background look larger and closer to the foreground.</p>
+    <p>In the second picture, nearby objects look much larger relative to distant ones, and the stairs' edges converge sharply, making the scene more stretched out and spacious.</p>
     <div class="gallery">
       <div>
         <img src="images/stairs-zoom.jpg" alt="Stairs zoomed">
@@ -127,22 +131,19 @@
 
   <div class="section">
     <h2>Part 3: Dolly Zoom</h2>
-    <p>
-      This is a dolly zoom effect of roses in the Rose Garden.
-    </p>
-    <p>
-      Zooming makes background elements appear larger and closer together, while physically moving back keeps the roses the same size in the frame.
-    </p>
-    <p>
-      So the relationship between the subject and background keeps changing, and the background seems to “rush in”.
-    </p>
+    <p>This is a dolly zoom effect of roses in the Rose Garden.</p>
+    <p>Zooming makes background elements appear larger and closer together, while physically moving back keeps the roses the same size in the frame.</p>
+    <p>So the relationship between the subject and background keeps changing, and the background seems to “rush in”.</p>
     <div class="gallery">
       <div>
-        <img src="images/dollyzoom.GIF" alt="Dolly Zoom animation">
-        <div class="caption">Dolly Zoom of Roses</div>
+        <img src="images/dollyzoom1.jpg" alt="Dolly Zoom step 1">
+        <div class="caption">Dolly Zoom - Start</div>
+      </div>
+      <div>
+        <img src="images/dollyzoom2.jpg" alt="Dolly Zoom step 2">
+        <div class="caption">Dolly Zoom - End</div>
       </div>
     </div>
   </div>
 </body>
 </html>
-
