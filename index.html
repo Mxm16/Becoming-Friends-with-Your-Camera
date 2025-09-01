@@ -1,62 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Open+Sans:wght@400;600&family=Pacifico&display=swap');
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Becoming Friends with Your Camera</title>
   <style>
-    body {
-      font-family: "Helvetica Neue", Arial, sans-serif;
-      max-width: 960px;
-      margin: auto;
-      line-height: 1.7;
-      background: #f5f7fa;
-      padding: 40px 20px;
-      color: #444;
-    }
-    h1 {
-      text-align: center;
-      color: #2c3e50;
-      font-size: 2.4em;
-      margin-bottom: 10px;
-    }
-    h2 {
-      color: #34495e;
-      border-left: 6px solid #3498db;
-      padding-left: 12px;
-      margin-top: 50px;
-      font-size: 1.5em;
-    }
-    p {
-      color: #555;
-      font-size: 1.05em;
-      text-align: justify;
-    }
-    em {
-      color: #7f8c8d;
-    }
-    .section {
-      background: #fff;
-      padding: 25px 30px;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-      margin-bottom: 40px;
-    }
-    .gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .gallery img {
-      width: 100%;
-      border-radius: 10px;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.12);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-    .gallery img:hover {
-      transform: scale(1.03);
-      box-shadow: 0 6px 18px rgba(0,0,0,0.18);
-    }
+  body {
+    font-family: "Open Sans", Arial, sans-serif;
+    max-width: 960px;
+    margin: auto;
+    line-height: 1.8;
+    background: #fdf5f7;
+    padding: 40px 20px;
+    color: #444;
+  }
+  
+  h1 {
+    text-align: center;
+    font-family: "Merriweather", serif;
+    color: #b03060;
+    font-size: 2.6em;
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 2px rgba(176,48,96,0.15);
+  }
+  
+  em {
+    font-family: "Pacifico", cursive;
+    color: #c06090;
+    font-size: 1.1em;
+  }
+  
+  h2 {
+    font-family: "Merriweather", serif;
+    color: #8b3a62;
+    margin-top: 50px;
+    font-size: 1.5em;
+    position: relative;
+    padding-bottom: 6px;
+  }
+  h2::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 60px;
+    height: 3px;
+    background: linear-gradient(to right, #e75480, #ff9eb5);
+    border-radius: 2px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 1.05em;
+    text-align: justify;
+    margin: 15px 0;
+  }
+  
+  .section {
+    background: #fff;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    margin-bottom: 40px;
+    border-top: 5px solid transparent;
+    border-image: linear-gradient(to right, #e75480, #ff9eb5);
+    border-image-slice: 1;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 18px rgba(231,84,128,0.25);
+  }
     .caption {
       text-align: center;
       font-size: 0.9em;
@@ -72,12 +87,9 @@
 
   <div class="section">
     <h2>Part 1: Selfie: The Wrong Way vs. The Right Way</h2>
-    <p>
-      Here is a comparison of a close-up selfie versus stepping back and zooming in.
-      The reason why the close-up selfie looks distorted may be that when the camera is close to our face, 
-      the wide-angle perspective exaggerates the size of features which are closer to the lens, causing "big noses"
-      and "small ears".
-    </p>
+    <p>Here is a comparison of a close-up selfie versus stepping back and zooming in.</p>
+    <p>The reason why the close-up selfie looks distorted may be that when the camera is close to our face,</p>
+    <p>the wide-angle perspective exaggerates the size of features which are closer to the lens, causing "big noses" and "small ears".</p>
     <div class="gallery">
       <div>
         <img src="images/selfie-close.jpg" alt="Close selfie">
@@ -93,8 +105,12 @@
   <div class="section">
     <h2>Part 2: Architectural Perspective Compression</h2>
     <p>
-      Looking up long stairs: one photo taken by zooming in, and the other by walking closer without zoom. 
+      Looking up long stairs: one photo taken by zooming in, and the other by walking closer without zoom.
+    </p>
+    <p>
       The reason why the first picture looks flattened or compressed may be that zooming makes objects at different distances appear closer together, making the background look larger and closer to the foreground.
+    </p>
+    <p>
       In the second picture, nearby objects look much larger relative to distant ones, and the stairs' edges converge sharply, making the scene more stretched out and spacious.
     </p>
     <div class="gallery">
@@ -113,8 +129,12 @@
     <h2>Part 3: Dolly Zoom</h2>
     <p>
       This is a dolly zoom effect of roses in the Rose Garden.
-      Zooming makes background elements appear larger and closer together, while physically moving back keeps the roses the same size in the frame, 
-      so the relationship between the subject and background keeps changing, and the background seems to “rush in”.
+    </p>
+    <p>
+      Zooming makes background elements appear larger and closer together, while physically moving back keeps the roses the same size in the frame.
+    </p>
+    <p>
+      So the relationship between the subject and background keeps changing, and the background seems to “rush in”.
     </p>
     <div class="gallery">
       <div>
